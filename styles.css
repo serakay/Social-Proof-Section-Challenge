@@ -1,0 +1,272 @@
+body {
+  font-family: 'Spartan', sans-serif;
+  background-image: url(images/bg-pattern-top-desktop.svg), url(images/bg-pattern-bottom-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: 10rem 0, 30rem 12rem;
+  background-color: white;
+}
+
+h1 {
+  color: hsl(300, 43%, 22%);
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  margin-bottom: 0;
+}
+
+.top-half {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 15px;
+  grid-row-gap: 0px;
+}
+
+.header p {
+  font-size: 0.9375rem;
+  line-height: 1.5rem;
+  color: grey;
+  font-weight: 500;
+  margin-top: 0.9rem;
+}
+
+.header {
+  width: 475px;
+}
+
+.container {
+  width: 1150px;
+  margin: 10% auto;
+}
+
+.five-star-ratings {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: hsl(300, 43%, 22%);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.ratings {
+  background-color: hsl(300, 24%, 96%);
+  border-radius: 10px;
+  height: 40px;
+  width: 430px;
+  padding-top: 1.7rem;
+  padding-left: 2rem;
+}
+
+.ratings p {
+  display: inline;
+  margin-left: 20px;
+}
+
+.stars {
+  margin-right: 20px;
+}
+
+.stars img {
+  margin-right: 5px;
+}
+
+.report-guru {
+  margin-left: 50px;
+}
+
+.besttech {
+  margin-left: 80px;
+}
+
+.bottom-half {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 0px;
+}
+
+.testimonials {
+  background-color: hsl(300, 43%, 22%);
+  border-radius: 10px;
+  padding: 30px 42px;
+  height: 170px;
+}
+
+.testimonials p {
+  font-size: 0.8rem;
+  color: white;
+  line-height: 1.5rem;
+  margin-top: 25px;
+}
+
+img {
+  float: left;
+  border-radius: 50%;
+}
+
+h4 {
+  color: white;
+  font-size: 0.8rem;
+  margin: 0;
+  margin-top: 5px;
+}
+
+h5 {
+  color: hsl(333, 80%, 67%);
+  font-weight: 400;
+  font-size: 0.8rem;
+  margin: 0;
+  margin-top: 5px;
+}
+
+.avatar img {
+  width: 45px;
+}
+
+.buyer-name {
+  margin-left: 60px;
+}
+
+.irene {
+  margin-top: 20px;
+}
+
+.anne {
+  margin-top: 40px;
+}
+
+/* Mobile View */
+
+@media screen and (max-width: 600px) {
+
+  body {
+    background-image: url(images/bg-pattern-top-mobile.svg), url(images/bg-pattern-bottom-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: 35rem 0, 0 100rem;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 5rem;
+    line-height: 5rem;
+  }
+
+  .container {
+    margin-top: 20vh;
+    width: 1000px;
+  }
+
+  .header {
+    width: 900px;
+    margin: auto;
+  }
+
+  .header p {
+    margin-top: 4rem;
+    font-size: 2.4rem;
+    line-height: 3.5rem;
+    text-align: center;
+  }
+
+  .top-half, .bottom-half {
+    display: block;
+  }
+
+  .report-guru {
+    margin-left: 0px;
+  }
+
+  .besttech {
+    margin-left: 0px;
+  }
+
+  .ratings {
+    padding: 2rem 2rem;
+    border-radius: 20px;
+    width: 800px;
+    height: 160px;
+    margin: auto;
+    margin-top: 50px;
+    display: block;
+  }
+
+  .ratings p {
+    margin-top: 100px;
+    margin-left: 0;
+    text-align: center;
+    display: block;
+    font-size: 2.4rem;
+  }
+
+  .stars img {
+    width: 45px;
+    margin-right: 15px;
+    text-align: center;
+  }
+
+  .stars {
+    position: relative;
+    top: 20px;
+    left: 250px;
+  }
+
+  .ratings div {
+    margin-right: 100px;
+  }
+
+  .irene, .anne {
+    margin-top: 0;
+  }
+
+  .bottom-half {
+    margin-top: 110px;
+  }
+
+  .testimonials {
+    width: 800px;
+    height: 550px;
+    margin: auto;
+    margin-bottom: 50px;
+  }
+
+  .testimonials p {
+    font-size: 1.9rem;
+    color: white;
+    line-height: 4rem;
+    margin: auto;
+    margin-top: 60px;
+    width: 700px;
+  }
+
+  .avatar img {
+    width: 130px;
+    margin-top: 50px;
+    margin-left: 50px;
+  }
+
+  h4 {
+    font-size: 2.4rem;
+    margin: 0;
+    margin-left: 180px;
+    margin-top: 70px;
+  }
+
+  h5 {
+    font-size: 2.4rem;
+    margin: 0;
+    margin-left: 180px;
+    margin-top: 10px;
+  }
+
+}
+
+/* Frontend Mentor Attribution */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
